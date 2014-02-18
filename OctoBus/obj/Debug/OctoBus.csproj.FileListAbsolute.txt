@@ -1,0 +1,7 @@
+C:\Projects\Sandbox\OctoBus\OctoBus\bin\Debug\OctoBus.dll
+C:\Projects\Sandbox\OctoBus\OctoBus\bin\Debug\OctoBus.pdb
+C:\Projects\Sandbox\OctoBus\OctoBus\bin\Debug\RabbitMQ.Client.dll
+C:\Projects\Sandbox\OctoBus\OctoBus\bin\Debug\RabbitMQ.Client.xml
+C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.csprojResolveAssemblyReference.cache
+C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.dll
+C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.pdb

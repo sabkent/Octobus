@@ -1,0 +1,11 @@
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\OctuBus.Tests.dll
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\OctuBus.Tests.pdb
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\nunit.framework.dll
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\OctoBus.dll
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\RabbitMQ.Client.dll
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\OctoBus.pdb
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\nunit.framework.xml
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\bin\Debug\RabbitMQ.Client.xml
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\obj\Debug\OctuBus.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\obj\Debug\OctuBus.Tests.dll
+C:\Projects\Sandbox\OctoBus\OctuBus.Tests\obj\Debug\OctuBus.Tests.pdb
