@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using RabbitMQ.Client;
 
 namespace OctoBus
 {
-    public class MessageBus
+    public class MessageBus : IDisposable
     {
         private ConnectionFactory _connectionFactory;
         private IConnection _connection;
         private IModel _model;
         private string _exchangeName = "OctoBusExchange";
+        private string _queueName = "OctoBusQeueue";
+        private string _routingKey = "";
         public MessageBus()
         {
             _connectionFactory = new ConnectionFactory
@@ -25,11 +24,9 @@ namespace OctoBus
             _connection = _connectionFactory.CreateConnection();
             _model = _connection.CreateModel();
 
+            _model.QueueDeclare(_queueName, true, false, false, null);
             _model.ExchangeDeclare(_exchangeName, ExchangeType.Fanout, true);
-            _model.QueueDeclare("OctoBusQueue", true, false, false, null);
-
-            _model.QueueBind("OctoBusQueue", _exchangeName, "");
-            
+            _model.QueueBind(_queueName, _exchangeName, _routingKey);
         }
 
         public void Send(string message)
@@ -37,9 +34,15 @@ namespace OctoBus
             var properties = _model.CreateBasicProperties();
             properties.SetPersistent(true);
 
-            var data = Encoding.Default.GetBytes(message);
+            var data = Encoding.ASCII.GetBytes(message);
 
-            _model.BasicPublish(_exchangeName, "", properties, data);
+            _model.BasicPublish(_exchangeName, _routingKey, properties, data);
+        }
+
+        public void Dispose()
+        {
+            _model.Dispose();
+            _connection.Dispose();
         }
     }
 }

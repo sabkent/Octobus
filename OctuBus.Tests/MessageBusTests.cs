@@ -15,9 +15,10 @@ namespace OctuBus.Tests
         [Test]
         public void Publish()
         {
-            var messageBus = new MessageBus();
-
-            messageBus.Send("hello");
+            using (var messageBus = new MessageBus())
+            {
+                messageBus.Send("hello");
+            }
         }
     }
 }
