@@ -12,7 +12,8 @@ namespace OctoBus
         private ConnectionFactory _connectionFactory;
         private IConnection _connection;
         private IModel _model;
-        private string _exchangeName = "OctoBusExchange";
+        private string _exchangeName = "FUCKINGWORK";
+        private string _queueName = "FUCKINGWORK";
         public MessageBus()
         {
             _connectionFactory = new ConnectionFactory
@@ -25,10 +26,11 @@ namespace OctoBus
             _connection = _connectionFactory.CreateConnection();
             _model = _connection.CreateModel();
 
-            _model.ExchangeDeclare(_exchangeName, ExchangeType.Fanout, true);
-            _model.QueueDeclare("OctoBusQueue", true, false, false, null);
+            _model.QueueDeclare(_queueName, true, false, false, new Dictionary<string, object>());
 
-            _model.QueueBind("OctoBusQueue", _exchangeName, "");
+            _model.ExchangeDeclare(_exchangeName, ExchangeType.Fanout, true);
+
+            _model.QueueBind(_queueName, _exchangeName, "");
             
         }
 
