@@ -5,3 +5,10 @@ C:\Projects\Sandbox\OctoBus\OctoBus\bin\Debug\RabbitMQ.Client.xml
 C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.csprojResolveAssemblyReference.cache
 C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.dll
 C:\Projects\Sandbox\OctoBus\OctoBus\obj\Debug\OctoBus.pdb
+C:\Development\Octobus\OctoBus\bin\Debug\OctoBus.dll
+C:\Development\Octobus\OctoBus\bin\Debug\OctoBus.pdb
+C:\Development\Octobus\OctoBus\bin\Debug\RabbitMQ.Client.dll
+C:\Development\Octobus\OctoBus\bin\Debug\RabbitMQ.Client.xml
+C:\Development\Octobus\OctoBus\obj\Debug\OctoBus.csprojResolveAssemblyReference.cache
+C:\Development\Octobus\OctoBus\obj\Debug\OctoBus.dll
+C:\Development\Octobus\OctoBus\obj\Debug\OctoBus.pdb

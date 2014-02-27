@@ -20,5 +20,13 @@ namespace OctuBus.Tests
                 messageBus.Send("hello");
             }
         }
+
+        [Test]
+        public void Consume()
+        {
+            MessageBroker broker = new MessageBroker();
+
+            broker.Start();
+        }
     }
 }
